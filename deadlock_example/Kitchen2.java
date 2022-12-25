@@ -1,6 +1,14 @@
 // https://www.linkedin.com/learning/advanced-java-programming-2/avoiding-thread-deadlock?autoplay=true
 package deadlock_example;
 
+/**Output
+ * Cook 1: holding the spoon...
+ *
+ * Cook 1: holding the spoon and the bowl.
+ * Cook 1: holding the spoon...
+ * Cook 1: waiting for the bowl...
+ * Cook 1: holding the spoon and the bowl.
+ * */
 public class Kitchen2{
 
 public static Object spoon = new Object();
